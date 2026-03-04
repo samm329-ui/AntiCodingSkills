@@ -873,5 +873,288 @@
     ],
     "features": [],
     "routes": []
+  },
+  {
+    "filename": "LinkedinCityMap-main.zip",
+    "stack": [
+      "nextjs",
+      "react",
+      "typescript",
+      "maplibre-gl",
+      "framer-motion"
+    ],
+    "has_package_json": true,
+    "has_requirements_txt": false,
+    "is_nextjs": true,
+    "is_vite": false,
+    "is_react": true,
+    "is_python": false,
+    "app_router": true,
+    "pages_router": false,
+    "components": [
+      "MapLibreWorldMap.tsx",
+      "city-panel.tsx",
+      "sidebar.tsx",
+      "world-map.tsx",
+      "maplibre-world-map.css"
+    ],
+    "features": [
+      "maplibre-gl-vector-tiles",
+      "tokyo-night-palette-basemap-tinting",
+      "city-circle-layers-with-glow",
+      "geojson-arc-connections-neon-blue",
+      "profile-label-layers-zoom-8-plus",
+      "circular-profile-arrangement-around-city",
+      "user-geolocation-orange-dot",
+      "framer-motion-collapsible-sidebar",
+      "category-city-search-filters",
+      "active-filter-tags",
+      "city-panel-drill-down",
+      "dotted-svg-world-overlay",
+      "fly-to-animation-on-click",
+      "linkedin-branding-in-sidebar"
+    ],
+    "routes": [],
+    "design_system": {
+      "palette": "Tokyo Night: bg=#1a1b26, land=#1e1f2e, water=#13141f, neon_blue=#6d9cf7, fg=#c0caf5, orange=#ff9e64, cyan=#7dcfff",
+      "basemap_url": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+      "animation": "framer-motion spring sidebar, flyTo 1500ms"
+    },
+    "adaptable_to": [
+      "franchise-location-maps",
+      "alumni-networks",
+      "sales-region-maps",
+      "delivery-zone-visualization"
+    ]
+  },
+  {
+    "filename": "NATai-v1-main (1).zip",
+    "stack": [
+      "python",
+      "fastapi",
+      "pydantic",
+      "faiss",
+      "edge-tts",
+      "groq"
+    ],
+    "has_package_json": false,
+    "has_requirements_txt": true,
+    "is_nextjs": false,
+    "is_vite": false,
+    "is_react": false,
+    "is_python": true,
+    "app_router": false,
+    "pages_router": false,
+    "components": [],
+    "services": [
+      "chat_service",
+      "groq_service",
+      "realtime_service",
+      "intelligence_service",
+      "vector_store_service",
+      "memory_service"
+    ],
+    "endpoints": [
+      "POST /chat",
+      "POST /chat/stream (SSE)",
+      "POST /chat/realtime/stream (SSE)",
+      "POST /intelligence",
+      "GET /system/status",
+      "GET /system/detailed",
+      "GET /vectorstore/status",
+      "POST /vectorstore/rebuild",
+      "GET /sessions",
+      "GET /sessions/{id}",
+      "DELETE /sessions/{id}",
+      "GET /memory",
+      "POST /memory",
+      "DELETE /memory/{id}",
+      "GET /learning/files"
+    ],
+    "features": [
+      "sse-streaming-chat",
+      "sentence-level-tts-chunking-edge-tts",
+      "groq-llm-integration",
+      "faiss-vector-store-rag",
+      "tavily-realtime-search",
+      "alpha-vantage-financial-data",
+      "fmp-financial-modelling-prep",
+      "newsapi-integration",
+      "google-search-integration",
+      "intelligence-endpoint-entity-classification",
+      "structured-financial-data-response",
+      "persistent-cross-session-memory",
+      "multi-api-orchestration",
+      "caching-with-ttl",
+      "session-management"
+    ],
+    "routes": [],
+    "env_vars_required": [
+      "GROQ_API_KEY",
+      "TAVILY_API_KEY",
+      "ALPHA_VANTAGE_KEY",
+      "FMP_KEY",
+      "NEWS_API_KEY",
+      "GOOGLE_API_KEY",
+      "GOOGLE_CSE_ID",
+      "TTS_VOICE",
+      "TTS_RATE"
+    ],
+    "intelligence_response_shape": {
+      "entity_name": "string",
+      "entity_type": "company|industry|brand|sector",
+      "classification": "object",
+      "structured_data": "object (financials, ratios, competitors, market_position)",
+      "response": "string (markdown narrative)",
+      "sources_searched": "number",
+      "api_sources_used": "string[]",
+      "cached": "boolean"
+    },
+    "adaptable_to": [
+      "any-site-needing-AI-chat",
+      "BI-dashboards",
+      "research-portals",
+      "consultancy-sites"
+    ]
+  },
+  {
+    "filename": "PetShop-main.zip",
+    "stack": [
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwind",
+      "qrcode"
+    ],
+    "has_package_json": true,
+    "has_requirements_txt": false,
+    "is_nextjs": true,
+    "is_vite": false,
+    "is_react": true,
+    "is_python": false,
+    "app_router": true,
+    "pages_router": false,
+    "components": [
+      "desktop/Header.tsx",
+      "desktop/HeroSection.tsx",
+      "desktop/CategorySection.tsx",
+      "desktop/FeaturedPetsSection.tsx",
+      "desktop/BreedFilterSection.tsx",
+      "desktop/PetDetailDialog.tsx",
+      "desktop/CartSheet.tsx",
+      "desktop/CheckoutDialog.tsx",
+      "desktop/ReviewsSection.tsx",
+      "desktop/VisitBookingSection.tsx",
+      "desktop/WhyChooseUs.tsx",
+      "desktop/Footer.tsx",
+      "mobile/MobileHeader.tsx",
+      "mobile/MobileHeroCarousel.tsx",
+      "mobile/MobileBottomNav.tsx",
+      "mobile/MobileCartFab.tsx",
+      "mobile/IconCategoryStrip.tsx",
+      "mobile/HorizontalPetScroller.tsx",
+      "shared/LoadingScreen.tsx"
+    ],
+    "features": [
+      "dual-mobile-desktop-component-layout",
+      "video-hero-with-scroll-driven-overlay",
+      "react-context-cart",
+      "4-step-checkout-flow-review-address-payment-confirmation",
+      "upi-qr-code-generation-via-qrcode-npm",
+      "cod-cash-on-delivery-option",
+      "real-time-address-form-validation",
+      "pet-detail-dialog-with-delivery-mode-selector",
+      "visit-booking-date-time-slot",
+      "breed-filter-section",
+      "category-section",
+      "featured-items-section",
+      "horizontal-scroller-mobile",
+      "icon-category-strip-mobile",
+      "mobile-bottom-nav",
+      "mobile-floating-cart-fab",
+      "loading-screen",
+      "reviews-section"
+    ],
+    "routes": [],
+    "design_system": {
+      "palette": "warm cream #FFF8EE, teal-primary #5FBDB3, amber-accent #F4B860, charcoal #2E2E2E",
+      "fonts": "font-heading (custom), system sans for body",
+      "animations": "animate-fade-in-up, animate-paw-bounce, animate-scale-in, scroll-driven overlay darkening",
+      "border_radius": "rounded-2xl (cards), rounded-full (buttons)",
+      "checkout_upi_pattern": "upi://pay?pa=MERCHANT@upi&pn=NAME&am=AMOUNT&cu=INR&tn=ORDER_DESC"
+    },
+    "context": [
+      "CartContext: items[], subtotal, deliveryCharge, total, clearCart()"
+    ],
+    "adaptable_to": [
+      "any-ecommerce",
+      "service-booking-sites",
+      "clinic-appointment",
+      "consultancy-packages"
+    ]
+  },
+  {
+    "filename": "ProjectSky-v2.0-main.zip",
+    "stack": [
+      "nextjs",
+      "react",
+      "typescript",
+      "three.js",
+      "glsl"
+    ],
+    "has_package_json": true,
+    "has_requirements_txt": false,
+    "is_nextjs": true,
+    "is_vite": false,
+    "is_react": true,
+    "is_python": false,
+    "app_router": true,
+    "pages_router": false,
+    "components": [
+      "DynamicSkyOverlay.tsx",
+      "StarField.tsx",
+      "ConstellationGroup.tsx",
+      "ConstellationLines.tsx",
+      "IconBubble.tsx",
+      "LinkModal.tsx"
+    ],
+    "features": [
+      "three-js-webgl-renderer-fullscreen-quad",
+      "glsl-fragment-shader-star-twinkling",
+      "fbm-fractal-brownian-motion-noise",
+      "luminance-based-star-detection",
+      "sky-area-mask-uv-y",
+      "silhouette-exclusion-radial-mask",
+      "per-star-unique-phase-hash",
+      "layered-slow-drift-plus-fast-flicker",
+      "power-curve-twinkling-0.8",
+      "canvas-procedural-starfield",
+      "constellation-icon-layout",
+      "svg-constellation-lines",
+      "glassmorphism-icon-bubbles",
+      "neon-glow-on-hover",
+      "backdrop-filter-blur",
+      "zoom-in-modal-animation",
+      "inline-svg-social-icons-no-external-deps"
+    ],
+    "routes": [],
+    "design_system": {
+      "palette": "deep space black #020510, neon blue rgba(100,160,255), glow rgba(80,140,255,0.25), glassmorphism rgba(10,20,60,0.55)",
+      "shader_techniques": [
+        "luminance: dot(rgb, vec3(0.2126, 0.7152, 0.0722))",
+        "star_mask: smoothstep(0.30, 0.60, brightness)",
+        "sky_mask: smoothstep(0.35, 0.55, vUv.y)",
+        "hash(floor(vUv*500)) for per-star unique phase",
+        "fbm 4-octave noise for slow drift",
+        "brightness multiplier range 0.3–2.0"
+      ],
+      "icon_bubble_style": "backdropFilter:blur(4px), border:1.5px solid rgba(100,160,255,0.5), boxShadow:0 0 16px rgba(80,140,255,0.25)"
+    },
+    "adaptable_to": [
+      "creative-hero-sections",
+      "linktree-pages",
+      "agency-landing-pages",
+      "portfolio-hero"
+    ]
   }
 ]
